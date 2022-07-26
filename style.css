@@ -43,12 +43,22 @@ body {
 
     background: white;
 
-    width: 646px;
-    height: 504px;
+    max-width: 646px;
+    max-height: 504px;
+
+    width: 70%;
+    height: 51.8%;
 
     border-radius: 15px;
 
     display: flex;
+}
+
+.image-container img {
+
+    width: auto;
+    height: 100%;
+
 }
 
 
@@ -176,8 +186,11 @@ button svg {
 
         background: white;
     
-        width: 440px;
-        height: 80%;
+        max-width: 440px;
+        max-height: 750px;
+
+        width: 100%;
+        height: 100%;
     
         border-radius: 15px;
     
