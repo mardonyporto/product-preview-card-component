@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+:root {
+
+    --medium-green: #3D8168;
+    --bg-color: #F3EAE3;
+    --light-grey: #858585;
+    --dark-grey: #2F2F2F;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+body {
+
+    background: var(--bg-color);
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .card {
+
+    background: white;
+
+    width: 646px;
+    height: 504px;
+
+    border-radius: 15px;
+
+    display: flex;
+}
+
+
+.container .card .info-card h4 {
+
+    margin: 40px 0 0 32px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.2em;
+    color: var(--light-grey);
+}
+
+
+.container .card .info-card h1 {
+
+    margin: 24px 86px 0 32px;
+
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: var(--dark-grey);
+}
+
+
+.container .card .info-card p {
+
+    margin: 32px 53px 0 32px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 133.52%;
+
+    color: var(--light-grey);
+}
+
+.container .card .info-card .values{
+
+    display: flex;
+
+}
+
+.container .card .info-card .values .new-value{
+
+    margin: 48px 0 0 32px;
+
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: var(--medium-green);
+
+}
+
+.container .card .info-card .values .old-value{
+
+    margin: 55px 0 0 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 133.52%;
+
+    text-decoration-line: line-through;
+
+    color: #858585;
+
+}
+
+button {
+
+    margin: 24px auto;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 255px;
+    height: 48px;
+    left: 793px;
+    top: 656px;
+
+    background: #3D8168;
+    border-radius: 10px;
+    border-style: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 133.52%;
+
+    color: #FFFFFF;
+    
+
+}
+
+button svg {
+
+    margin: 0 16px;
+
+}
+
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 650px) {
+
+
+    .container .card {
+
+        background: white;
+    
+        width: 440px;
+        height: 80%;
+    
+        border-radius: 15px;
+    
+        display: flex;
+        position: relative;
+    }
+
+    .info-card {
+
+        margin-top: 264px;
+
+    }
+
+    .image-container {
+
+
+        width: 100%;
+        height: 262px;
+        position: absolute; 
+         
+    }
+
+    .image-container img {
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 15px 15px 0 0;
+
+        display: inline-block; 
+        object-fit: cover;
+
+        object-position: center 35% ;
+
+    }
+
+    button {
+
+        width: 86%;
+    }
+
+
+}
+
