@@ -31,12 +31,16 @@ body {
 
 .container {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    width: 100vw;
-    height: 100vh;
+    margin-top: calc(50vh - 25vh);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 100%; */
+    /* height: 100%; */
+
 }
 
 .container .card {
@@ -183,6 +187,7 @@ button svg {
     .container .card {
 
         width: 100%;
+        
     }
 
 }
@@ -190,6 +195,12 @@ button svg {
 
 
 @media (max-width: 650px) {
+
+    .container {
+
+        margin: 16px 0 16px;
+
+    }
 
 
     .container .card {
@@ -257,8 +268,6 @@ button svg {
         max-height: 790px;
 
         width: 98%;
-        
-        
     
         border-radius: 15px;
     
@@ -266,6 +275,24 @@ button svg {
         position: relative;
     }
 
+}
+
+@media (max-width: 320px) {
+
+
+    .container .card {
+
+        width: 90%;
+        height: auto;
+
+    }
+
+    .image-container img {
+
+        width: 10px;
+        height: 10px;
+    
+    }
 
 
 }
