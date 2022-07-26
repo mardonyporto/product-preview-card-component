@@ -178,6 +178,22 @@ button svg {
 
 /* RESPONSIVE */
 
+@media (max-width: 910px) {
+
+
+    .container .card {
+
+
+        width: 100%;
+
+
+    }
+
+
+
+}
+
+
 
 @media (max-width: 650px) {
 
